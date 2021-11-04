@@ -1,0 +1,48 @@
+
+html {
+    font-size: 62.5%;
+}
+
+.navbar {
+    position: fixed;
+    background-color: gainsboro;
+    width: 100%;
+}
+li > a {
+    text-decoration-line: none;
+    color: black;
+}
+
+li > a:hover {
+    text-decoration-line: underline;
+    color: white;
+}
+
+.navbar ul li {
+    margin: 0;
+    padding: 1rem;
+    width: 12rem;
+    text-align: center;
+    font-size: 2.5rem;
+    list-style: none;
+    background-color: lightgray;
+    transition: background-color;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+}
+
+.navbar ul li:hover {
+    background-color: gray;
+}
+
+ul > li {
+    border: 0.1rem solid rgba(5, 0, 0, 0.61);
+    background-color: lightgray;
+}
+
+@media screen and (max-width: 910px) {
+    .navbar ul li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+}
