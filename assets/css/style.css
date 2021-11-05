@@ -7,6 +7,9 @@ html {
     position: fixed;
     background-color: gainsboro;
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 li > a {
     text-decoration-line: none;
@@ -29,6 +32,7 @@ li > a:hover {
     transition: background-color;
     transition-duration: 2s;
     transition-delay: 0.5s;
+    display: inline-block;
 }
 
 .navbar ul li:hover {
@@ -44,5 +48,9 @@ ul > li {
     .navbar ul li {
         display: block;
         margin-bottom: 1rem;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
     }
 }
